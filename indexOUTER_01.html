@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>喵喵測試的首頁</title>
+</head>
+
+<body>
+    <style>
+        html {
+            font-family: Arial, Geneva, "Microsoft JhengHei", sans-serif;
+        }
+    </style>
+    <h1>讓我測試一下嘛嗚嗚 DEMO-out-index_01</h1>
+    <div>
+        <a href="indexOUTER.html">喵喵測試的外頁_DEMO-out-index_01</a>
+    </div>
+
+    <iframe src="http://172.16.2.143/index.html" style="height: 200px; width:100%;"></iframe>
+    <script>
+        var DEMOoutindexreferrer = document.referrer;
+        console.log('喵喵測試的外頁_DEMO-out-index_01_referrer@' + DEMOoutindexreferrer);
+
+        var DEMOoutindexLocation = window.parent.location;
+        console.log('喵喵測試的外頁_DEMO-out-index_01_Location@' + DEMOoutindexLocation);
+    </script>
+</body>
+
+</html>
