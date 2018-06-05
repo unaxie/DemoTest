@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>喵喵測試的內頁</title>
+</head>
+
+<body>
+
+    <body>
+        <style>
+            html {
+                font-family: Arial, Geneva, "Microsoft JhengHei", sans-serif;
+                word-break: break-all;
+                word-wrap: break-word;
+            }
+
+            a {
+                color: aliceblue;
+            }
+
+            body {
+                color: #aaa;
+                background: #555;
+            }
+        </style>
+        <div>
+            <a href="index_01.html">喵喵測試的內頁_01</a>
+        </div>
+
+        <div>
+            <a href="javascript:history.back()">喵喵測試的內頁_01</a>
+        </div>
+        <div id="ShowBox"></div>
+        <div id="ShowBox2"></div>
+        <script>
+            var iframeReferrer = document.referrer;
+            console.log('喵喵測試的內頁_01_Referrer@' + iframeReferrer);
+            document.getElementById("ShowBox").innerText = '喵喵測試的內頁_01_Referrer@' + iframeReferrer;
+            var iframeLocation = window.parent.location;
+            console.log('喵喵測試的內頁_01_Location@' + iframeLocation);
+            document.getElementById("ShowBox2").innerText = '喵喵測試的內頁_01_Location@' + iframeLocation;
+        </script>
+    </body>
+
+</html>
