@@ -47,11 +47,13 @@
         <div id="ShowBox2"></div>
         <script>
             var iframeReferrer = document.referrer;
+            console.log(history.previous);
+            console.log(history.length);
             console.log('我是盤勢頁面_Referrer@' + iframeReferrer);
             document.getElementById("ShowBox").innerText = '我是盤勢頁面_Referrer@' + iframeReferrer;
-            var iframeLocation = window.parent.location;
-            console.log('我是盤勢頁面_Location@' + iframeLocation);
-            document.getElementById("ShowBox2").innerText = '我是盤勢頁面_Location@' + iframeLocation;
+            // var iframeLocation = window.parent.location;
+            // console.log('我是盤勢頁面_Location@' + iframeLocation);
+            // document.getElementById("ShowBox2").innerText = '我是盤勢頁面_Location@' + iframeLocation;
         </script>
     </body>
 
