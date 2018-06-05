@@ -18,6 +18,7 @@
                 word-wrap: break-word;
             }
 
+            div,
             a {
                 color: aliceblue;
             }
@@ -27,26 +28,26 @@
                 background: #555;
             }
         </style>
-        <h1> 我是大廳</h1>
+        <h1>投注紀錄</h1>
         <div>
-            <a href="gamestate.html">我是大廳_要去盤勢</a>
-        </div>
-
-        <div>
-            <a href="javascript:history.back()">我是大廳_history.back()</a>
+            <a href="gamestate.html">投注紀錄_要去盤勢</a>
         </div>
         <div>
-            <a href="javascript: void(0)" onclick="history.go(-1)">我是大廳_history.go(-1)</a>
+            <a href="javascript:history.back()">投注紀錄_history.back()</a>
+        </div>
+        <div>
+            <a href="javascript: void(0)" onclick="history.go(-1)">投注紀錄_history.go(-1)</a>
         </div>
         <div id="ShowBox"></div>
         <div id="ShowBox2"></div>
         <script>
             var iframeReferrer = document.referrer;
-            console.log('我是大廳_Referrer@' + iframeReferrer);
-            document.getElementById("ShowBox").innerText = '我是大廳_Referrer@' + iframeReferrer;
+            console.log('record_Referrer@' + iframeReferrer);
+            document.getElementById("ShowBox").innerText = '投注紀錄_Referrer@' + iframeReferrer;
+
             var iframeLocation = window.parent.location;
-            console.log('我是大廳_Location@' + iframeLocation);
-            document.getElementById("ShowBox2").innerText = '我是大廳_Location@' + iframeLocation;
+            console.log('record_Location@' + iframeLocation);
+            document.getElementById("ShowBox2").innerText = '投注紀錄_Location@' + iframeLocation;
         </script>
     </body>
 
